@@ -58,7 +58,7 @@ Examples:
 
 
 ## 📈 Visualizations
--- colocful and clear descriptive pivot charts with elegant design
+-- colorful and clearly descriptive pivot charts with elegant design
 
 
 ## 🚀 Technologies
