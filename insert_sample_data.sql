@@ -67,7 +67,7 @@ VALUES (3, 79, 6, '2021-07-17', 3);
 -- To inesert a lot more data!!!
 
 
--- ⚠️ NB! TO DO LIST:
+-- ⚠️ TO DO LIST:
 -- TO DO: Consider adding a 'Nationality' column to Visitors for regional trends
 -- IDEA: Create a derived table for recurring visitors to analyze loyalty
 -- NOTE: I need to finish inserting sample data for table 'Visits'
