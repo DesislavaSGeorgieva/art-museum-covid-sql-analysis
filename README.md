@@ -1,6 +1,6 @@
 # art-museum-covid-sql-analysis
 
-# 🖼️ Art Museum Visitor Analysis  
+# 🖼️ Art Museum Visitor Analysis (Work in Progress)
 
 *📍 Metropolitan and Guggenheim, during and after COVID* /temporary working title/ 
 
