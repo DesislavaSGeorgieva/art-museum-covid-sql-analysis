@@ -6,9 +6,7 @@
  
 ________________________________________
 
-⚠️ **Note**: This is a work-in-progress SQL analysis project using educational, simulated data inspired by museum statistics. Some sections include idea comments or to-do notes. 
-
-The purpose of these comments is to document my thought process during development and analysis. Final documentation is under development.
+⚠️ **Note**: This is a work-in-progress SQL analysis project using educational, simulated data inspired by museum statistics. Some sections include idea comments or to-do notes. The purpose of these comments is to document my thought process during development and analysis. Final documentation is under development.
 
 ________________________________________
 
