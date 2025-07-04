@@ -36,6 +36,7 @@ The relational structure contains 5 main tables:
 
 ## 📊 ER Database diagram
 🧩 **ER static diagram:**  https://1drv.ms/i/c/449aa745568c36c9/EUpo32-7MI1OhDnnOwwwReoBpqeU1UXLDl0Fw3XxSQY25Q?e=BTggA6/
+
 🔍 **ER interactive diagram:** https://dbdiagram.io/d/Metropolitan-Museum-of-Art-Guggenheim-Museum_ERD-6866426cf413ba3508154092
 
 
