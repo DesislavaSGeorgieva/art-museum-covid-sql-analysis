@@ -12,7 +12,9 @@ ________________________________________
 
 ## 📊 Project goal - initial notes on my overall idea:
 - To identify visitor personas (age, profession, gender, interests, etc.).
+  
 - To track the impact of COVID-19 on the attendance of cultural institutions and on this basis to draw a kind of conclusion about the sustainability of the need for culture in a dynamic in the negative sense of the word surrounding environment.
+  
 - To make a comparison between two leading museums in New York and on this basis to make an assumption about successful/unsuccessful strategies for cultural management, etc.
 
 
