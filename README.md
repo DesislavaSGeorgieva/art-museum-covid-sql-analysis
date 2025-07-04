@@ -6,9 +6,9 @@
  
 ________________________________________
 
-⚠️ **Note**: This is a work-in-progress SQL analysis project using educational, simulated data inspired by museum statistics. Some sections include idea comments or to-do notes. The 
+⚠️ **Note**: This is a work-in-progress SQL analysis project using educational, simulated data inspired by museum statistics. Some sections include idea comments or to-do notes. 
 
-purpose of these comments is to document my thought process during development and analysis. Final documentation is under development.
+The purpose of these comments is to document my thought process during development and analysis. Final documentation is under development.
 
 ________________________________________
 
@@ -17,8 +17,7 @@ ________________________________________
 - To identify visitor personas (age, profession, gender, interests, etc.).
   
   
-- To track the impact of COVID-19 on the attendance of cultural institutions and on this basis to draw a kind of conclusion about the sustainability of the need for culture in a dynamic
-  in the negative sense of the word surrounding environment.
+- To track the impact of COVID-19 on the attendance of cultural institutions and on this basis to draw a kind of conclusion about the sustainability of the need for culture in a dynamic in the negative sense of the word surrounding environment.
   
   
 - To make a comparison between two leading museums in New York and on this basis to make an assumption about successful/unsuccessful strategies for cultural management, etc.
