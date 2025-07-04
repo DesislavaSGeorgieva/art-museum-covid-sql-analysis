@@ -18,10 +18,15 @@ ________________________________________
 
 ## 🗃️ Project file content:
 ├── README.md               <- project description
+
 ├── er_diagram.png          <- ER diagram
+
 ├── create_tables.sql       <- creating tables script
+
 ├── insert_sample_data.sql  <- inserts data script
+
 ├── analysis_queries.sql    <- SQL queries
+
 ├── pivot_charts.xlsx       <- Excel pivot charts
 
 
