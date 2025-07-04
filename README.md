@@ -48,14 +48,27 @@ The relational structure contains 5 main tables:
 
 
 ## 🧠 SQL analyses
-# Example query:
+# Example
 -- Compare total visits across museums
 -- Goal: Understand which museum drew higher attendance overall
-SELECT m.Name AS Museum,
+SELECT 
+
+    m.Name AS Museum,
+
     COUNT(v.Visit_ID) AS Total_Visits
-FROM Visits v
-JOIN Exhibitions e ON v.Exhibition_ID = e.Exhibition_ID
-JOIN Museums m ON e.Museum_ID = m.Museum_ID
+    
+FROM 
+
+    Visits v
+
+JOIN 
+
+    Exhibitions e ON v.Exhibition_ID = e.Exhibition_ID
+    
+JOIN 
+
+    Museums m ON e.Museum_ID = m.Museum_ID
+    
 GROUP BY m.Name; 
 
 🔎 See all SQL queries here: queries.sql
