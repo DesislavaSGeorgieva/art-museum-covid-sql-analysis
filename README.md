@@ -36,10 +36,15 @@ ________________________________________
 
 ## 🗃️ Database structure
 The relational structure contains 5 main tables:
+
 - 'Museums' - data about museums
+  
 - 'Exhibitions' - exhibitions in museums
+  
 - 'Visitors' - visitor profiles
+  
 - 'Visits' - when and what was visited
+  
 - 'Covid_Periods' – periods separated as follows: before - during - after the pandemic
 
 
@@ -66,7 +71,7 @@ JOIN
 GROUP BY m.Name; 
 
 
-🔎 See all SQL queries here: queries.sql
+🔎 See all SQL queries here: analysis_queries.sql
 
 
 
@@ -77,16 +82,21 @@ GROUP BY m.Name;
 
 ## 🚀 Technologies
 - SQL (MySQL)
+  
 - Python
+  
 - Excel (Pivot Charts)
+  
 - Git/GitHub
 
 
 
 ## How to Run
 1. Install MySQL and import create_tables.sql and insert_sample_data.sql.
-2. Run analysis_queries.sql to analyze data.
-3. Open pivot_charts.xlsx in Excel.
+   
+3. Run analysis_queries.sql to analyze data.
+   
+5. Open pivot_charts.xlsx in Excel.
 
    
 ## 🎓 Author
