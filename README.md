@@ -18,6 +18,7 @@ ________________________________________
 - To make a comparison between two leading museums in New York and on this basis to make an assumption about successful/unsuccessful strategies for cultural management, etc.
 
 
+
 ## 🗃️ Project file content:
 ├── README.md               <- project description
 
@@ -32,6 +33,7 @@ ________________________________________
 ├── pivot_charts.xlsx       <- Excel pivot charts
 
 
+
 ## 🗃️ Database structure
 The relational structure contains 5 main tables:
 - 'Museums' - data about museums
@@ -41,41 +43,36 @@ The relational structure contains 5 main tables:
 - 'Covid_Periods' – periods separated as follows: before - during - after the pandemic
 
 
+
 ## 📊 ER Database diagram
 🧩 **ER static diagram:**  https://1drv.ms/i/c/449aa745568c36c9/EUpo32-7MI1OhDnnOwwwReoBpqeU1UXLDl0Fw3XxSQY25Q?e=BTggA6/
 
 🔍 **ER interactive diagram:** https://dbdiagram.io/d/Metropolitan-Museum-of-Art-Guggenheim-Museum_ERD-6866426cf413ba3508154092
 
 
+
 ## 🧠 SQL analyses
-# Example
--- Compare total visits across museums
--- Goal: Understand which museum drew higher attendance overall
+-- This is just an example. This query aims to compare total visits across museums in order to understand which museum drew higher attendance overall
+
 SELECT 
-
     m.Name AS Museum,
-
     COUNT(v.Visit_ID) AS Total_Visits
-    
 FROM 
-
     Visits v
-
 JOIN 
-
-    Exhibitions e ON v.Exhibition_ID = e.Exhibition_ID
-    
+    Exhibitions e ON v.Exhibition_ID = e.Exhibition_ID    
 JOIN 
-
-    Museums m ON e.Museum_ID = m.Museum_ID
-    
+    Museums m ON e.Museum_ID = m.Museum_ID    
 GROUP BY m.Name; 
+
 
 🔎 See all SQL queries here: queries.sql
 
 
+
 ## 📈 Visualizations
 -- After filling all tables with data, I will add colorful and clearly descriptive pivot charts with elegant design
+
 
 
 ## 🚀 Technologies
@@ -83,6 +80,7 @@ GROUP BY m.Name;
 - Python
 - Excel (Pivot Charts)
 - Git/GitHub
+
 
 
 ## How to Run
