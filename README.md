@@ -69,11 +69,11 @@ The relational structure contains 5 main tables:
 
 SELECT  m.Name AS Museum,  COUNT(v.Visit_ID) AS Total_Visits
 
-FROM  Visits v
+FROM  Visits AS v
     
-JOIN  Exhibitions e ON v.Exhibition_ID = e.Exhibition_ID    
+JOIN  Exhibitions AS e ON v.Exhibition_ID = e.Exhibition_ID    
 
-JOIN  Museums m ON e.Museum_ID = m.Museum_ID    
+JOIN  Museums AS m ON e.Museum_ID = m.Museum_ID    
 
 GROUP BY m.Name; 
 
