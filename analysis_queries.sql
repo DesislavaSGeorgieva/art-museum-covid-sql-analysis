@@ -1,16 +1,13 @@
 
 -- FORMING MAIN QUERIES 
 
--- ⚠️ TO DO!!! For each request I need to explain in detail what justifies its necessity - how it contributes to the full development of the conceptual idea of ​​my project!!!
-
-
 -- Query 1: Total number of visits per exhibition
 -- Goal: Identify most popular exhibitions overall
 SELECT 
     e.Name AS Exhibition,
     COUNT(v.Visit_ID) AS Total_Visits
-FROM Visits v
-JOIN Exhibitions e ON v.Exhibition_ID = e.Exhibition_ID
+FROM Visits AS v
+JOIN Exhibitions AS e ON v.Exhibition_ID = e.Exhibition_ID
 GROUP BY e.Name
 ORDER BY Total_Visits DESC;
 
@@ -19,9 +16,9 @@ ORDER BY Total_Visits DESC;
 -- Goal: Understand which museum drew higher attendance overall
 SELECT m.Name AS Museum,
     COUNT(v.Visit_ID) AS Total_Visits
-FROM Visits v
-JOIN Exhibitions e ON v.Exhibition_ID = e.Exhibition_ID
-JOIN Museums m ON e.Museum_ID = m.Museum_ID
+FROM Visits AS v
+JOIN Exhibitions AS e ON v.Exhibition_ID = e.Exhibition_ID
+JOIN Museums AS m ON e.Museum_ID = m.Museum_ID
 GROUP BY m.Name;
 
 
@@ -37,8 +34,8 @@ ORDER BY Visitors_Count DESC;
 SELECT 
     c.Name AS Covid_Period,
     COUNT(v.Visit_ID) AS Visits
-FROM Visits v
-JOIN Covid_Periods c ON v.Period_ID = c.Period_ID
+FROM Visits AS v
+JOIN Covid_Periods AS c ON v.Period_ID = c.Period_ID
 GROUP BY c.Name
 ORDER BY c.Name;
 
@@ -47,9 +44,9 @@ ORDER BY c.Name;
 SELECT 
     c.Name AS Covid_Period,
     ROUND(AVG(vis.Age), 1) AS Avg_Age
-FROM Visits v
-JOIN Visitors vis ON v.Visitor_ID = vis.Visitor_ID
-JOIN Covid_Periods c ON v.Period_ID = c.Period_ID
+FROM Visits AS v
+JOIN Visitors AS vis ON v.Visitor_ID = vis.Visitor_ID
+JOIN Covid_Periods AS c ON v.Period_ID = c.Period_ID
 GROUP BY c.Name;
 
 
@@ -59,16 +56,16 @@ SELECT
     m.Name AS Museum,
     e.Name AS Exhibition,
     COUNT(v.Visit_ID) AS Total_Visits
-FROM Visits v
-JOIN Exhibitions e ON v.Exhibition_ID = e.Exhibition_ID
-JOIN Museums m ON e.Museum_ID = m.Museum_ID
+FROM Visits AS v
+JOIN Exhibitions AS e ON v.Exhibition_ID = e.Exhibition_ID
+JOIN Museums AS m ON e.Museum_ID = m.Museum_ID
 GROUP BY m.Museum_ID, e.Exhibition_ID
 HAVING COUNT(v.Visit_ID) = (
     SELECT MAX(visit_count)
     FROM (
         SELECT COUNT(*) AS visit_count
-        FROM Visits v2
-        JOIN Exhibitions e2 ON v2.Exhibition_ID = e2.Exhibition_ID
+        FROM Visits AS v2
+        JOIN Exhibitions AS e2 ON v2.Exhibition_ID = e2.Exhibition_ID
         WHERE e2.Museum_ID = m.Museum_ID
         GROUP BY v2.Exhibition_ID
     ) AS subquery
@@ -87,9 +84,9 @@ SELECT
     END AS Age_Group,
     c.Name AS Covid_Period,
     COUNT(*) AS Visits
-FROM Visits v
-JOIN Visitors vis ON v.Visitor_ID = vis.Visitor_ID
-JOIN Covid_Periods c ON v.Period_ID = c.Period_ID
+FROM Visits AS v
+JOIN Visitors AS vis ON v.Visitor_ID = vis.Visitor_ID
+JOIN Covid_Periods AS c ON v.Period_ID = c.Period_ID
 GROUP BY Age_Group, c.Name
 ORDER BY Age_Group, c.Name;
 
@@ -98,8 +95,8 @@ ORDER BY Age_Group, c.Name;
 SELECT 
 e.Name AS Exhibition, 
 COUNT(v.Visit_ID) AS Visits
-FROM Visits v
-JOIN Exhibitions e ON v.Exhibition_ID = e.Exhibition_ID
+FROM Visits AS v
+JOIN Exhibitions AS e ON v.Exhibition_ID = e.Exhibition_ID
 GROUP BY e.Exhibition_ID
 HAVING COUNT(v.Visit_ID) > (
     SELECT AVG(cnt) 
@@ -111,7 +108,14 @@ HAVING COUNT(v.Visit_ID) > (
 );
 
 
+
 -- ⚠️ TO DO LIST!!! 
+
 -- 1. TRY TO FORM BRIEF AND CLEAR CONCLUSIONS!
+
 -- 2. ON THE BASIS OF THE CONCLUSIONS - WHAT RECOMMENDATIONS WILL I MAKE AND HOW WILL I FORM THEM!
+
 -- 3. ADD COLORFUL DIAGRAMS - PIVOT CHARTS ALONGSIDE EVERY QUERY!
+
+-- 4. For each request I need to explain in detail what justifies its necessity - how it contributes to the full development of the conceptual idea of ​​my project!!!
+
