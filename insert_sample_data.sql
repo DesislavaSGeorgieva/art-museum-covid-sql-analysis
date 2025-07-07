@@ -1,16 +1,14 @@
--- ⚠️ NOTE: This file contains early-stage queries and exploratory logic.
--- Several queries are under construction and will be optimized/refactored later.
 
-
--- I provide an explanation of where I got the statistical data from - links, publication date, etc.
-
-
--- 1. Data for Museums
+-- 1. DATA FOR MUSEUMS TABLE (2 MUSEUMS IN TOTAL)
+-- METROPOLITAN MUSEUM OF ART
+-- GUGGENHEIM MUSEUM
 INSERT INTO Museums (Museum_ID, Name, Location) VALUES (1, 'Metropolitan Museum of Art', 'New York');
 INSERT INTO Museums (Museum_ID, Name, Location) VALUES (2, 'Guggenheim Museum', 'New York');
 
 
--- 2. Data for Exhibitions
+-- 2. DATA FOR EXHIBITIONS TABLE (6 EXHIBITIONS IN TOTAL)
+-- 3 EXHIBITIONS IN METROPOLITAN MUSEUM OF ART (1 EXHIBITION - BEFORE COVID, 1 EXHIBITION - DURING COVID AND 1 EXHIBITION - POST COVID) 
+-- 3 EXHIBITIONS IN GUGGENHEIM MUSEUM (1 EXHIBITION - BEFORE COVID, 1 EXHIBITION - DURING COVID AND 1 EXHIBITION - POST COVID)
 INSERT INTO Exhibitions (Exhibition_ID, Name, Start_Date, End_Date, Museum_ID) VALUES (1, 'Van Gogh''s Irises', '2018-04-01', '2018-09-30', 1);
 INSERT INTO Exhibitions (Exhibition_ID, Name, Start_Date, End_Date, Museum_ID) VALUES (2, 'Ancient Egypt Revisited', '2019-02-15', '2019-07-15', 1);
 INSERT INTO Exhibitions (Exhibition_ID, Name, Start_Date, End_Date, Museum_ID) VALUES (3, 'Heavenly Bodies: Fashion and the Catholic Imagination', '2021-09-01', '2022-01-31', 1);
@@ -19,13 +17,13 @@ INSERT INTO Exhibitions (Exhibition_ID, Name, Start_Date, End_Date, Museum_ID) V
 INSERT INTO Exhibitions (Exhibition_ID, Name, Start_Date, End_Date, Museum_ID) VALUES (6, 'Contemporary Abstractions', '2022-03-01', '2022-09-30', 2);
 
 
--- 3. Data for Covid_Periods
+-- 3. DATA FOR COVID_PERIODS TABLE (3 DEFINED PERIODS - PRE-COVID, DURING COVID, POST COVID) 
 INSERT INTO Covid_Periods (Period_ID, Name, Start_Date, End_Date) VALUES (1, 'Pre-COVID', '2018-01-01', '2019-12-31');
 INSERT INTO Covid_Periods (Period_ID, Name, Start_Date, End_Date) VALUES (2, 'During COVID', '2020-01-01', '2021-06-30');
 INSERT INTO Covid_Periods (Period_ID, Name, Start_Date, End_Date) VALUES (3, 'Post-COVID', '2021-07-01', '2024-12-31');
 
 
--- 4. Data for Visitors 
+-- 4. DATA FOR VISITORS TABLE (200 RECORDS IN TOTAL)
 INSERT INTO Visitors (Visitor_ID, Age, Gender, Occupation) VALUES 
 (1, 66, 'Female', 'Teacher'),
 (2, 79, 'Male', 'Designer'),
@@ -228,7 +226,7 @@ INSERT INTO Visitors (Visitor_ID, Age, Gender, Occupation) VALUES
 (199, 81, 'Other', 'Doctor'),
 (200, 83, 'Female', 'Student');
 
--- 5. Data for Visits 
+-- 5. DATA FOR VISITS TABLE (200 RECORDS IN TOTAL)
 INSERT INTO Visits (Visit_ID, Visitor_ID, Exhibition_ID, Visit_Date, Period_ID) VALUES 
 (1, 45, 1, '2019-01-14', 1),
 (2, 37, 2, '2020-11-05', 2),
@@ -434,6 +432,9 @@ INSERT INTO Visits (Visit_ID, Visitor_ID, Exhibition_ID, Visit_Date, Period_ID) 
 
 
 -- ⚠️ TO DO LIST:
--- TO DO: Consider adding a 'Nationality' column to Visitors for regional trends
--- IDEA: Create a derived table for recurring visitors to analyze loyalty
--- NOTE: I need to finish inserting sample data for table 'Visits'
+
+-- IDEA: Create a derived table for recurring visitors to analyze loyalty !!!!!
+
+-- Provide an explanation of where I got the statistical data from - links, publication date, etc. !!!!!
+
+
