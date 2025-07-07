@@ -1,9 +1,6 @@
 
 -- CREATING RELATIONAL DATABASE WITH 5 TABLES, ACCORDING TO THE ANALYSIS I'M PLANNING 
 
--- ⚠️ TO DO!!!  Arguing my decision to have exactly 5 tables + what determines the choice of their thematic content + what columns each of the tables should include
-
-
 -- 1. Creating base table: Museums
 -- Includes basic identification and location fields
 CREATE TABLE Museums (
@@ -59,3 +56,7 @@ CREATE TABLE Visits (
     FOREIGN KEY (Exhibition_ID) REFERENCES Exhibitions(Exhibition_ID),
     FOREIGN KEY (Period_ID) REFERENCES Covid_Periods(Period_ID)
 );
+
+
+-- ⚠️ TO DO!!!  
+-- Arguing my decision to have exactly 5 tables + what determines the choice of their thematic content + what columns each of the tables should include
