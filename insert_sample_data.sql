@@ -122,7 +122,7 @@ INSERT INTO Visitors (Visitor_ID, Age, Gender, Occupation) VALUES
 (95, 46, 'Female', 'Designer'),
 (96, 18, 'Male', 'Teacher'),
 (97, 47, 'Male', 'Historian'),
-(98, 19, 'Other', 'Designer');
+(98, 19, 'Other', 'Designer'),
 (99, 60, 'Male', 'Designer'),
 (100, 65, 'Female', 'Student'),
 (101, 49, 'Other', 'Lawyer'),
