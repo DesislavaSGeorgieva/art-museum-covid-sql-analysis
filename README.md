@@ -21,6 +21,8 @@ ________________________________________
 - To make a comparison between two leading museums in New York and on this basis to make an assumption about successful/unsuccessful strategies for cultural management, etc.
 
 
+-----
+
 
 ## 🗃️ Project file content:
 
@@ -36,6 +38,8 @@ ________________________________________
 
 ├── pivot_charts.xlsx       <- Excel pivot charts
 
+
+-----
 
 
 ## 🗃️ Database structure
@@ -53,6 +57,8 @@ The relational structure contains 5 main tables:
 - 'Covid_Periods' – periods separated as follows: before - during - after the pandemic
 
 
+-----
+
 
 ## 📊 ER Database diagram
 
@@ -61,6 +67,8 @@ The relational structure contains 5 main tables:
 
 🔍 **ER interactive diagram:** https://dbdiagram.io/d/Metropolitan-Museum-of-Art-Guggenheim-Museum_ERD-6866426cf413ba3508154092
 
+
+-----
 
 
 ## 🧠 SQL analyses
@@ -81,10 +89,14 @@ GROUP BY m.Name;
 🔎 See all SQL queries here: analysis_queries.sql
 
 
+-----
+
 
 ## 📈 Visualizations
 -- After filling all tables with data, I will add colorful and clearly descriptive pivot charts with elegant design
 
+
+-----
 
 
 ## 🚀 Technologies
@@ -96,6 +108,7 @@ GROUP BY m.Name;
   
 - Git/GitHub
 
+-----
 
 
 ## How to Run
@@ -105,10 +118,15 @@ GROUP BY m.Name;
    
 5. Open pivot_charts.xlsx in Excel.
 
-   
+
+-----
+
+ 
 ## 🎓 Author
 Desislava Strahilova Georgieva 
 
 🎓 PhD in Art History 
 
-💻 Entry level SQL enthusiast with interests in cultural statistics and data visualization  
+💻 Research interests include the intersection of art history and digital methodologies, with a focus on data-informed approaches to visual culture, structured analysis of artworks, and the application of computational tools to support scholarly inquiry and interpretation. 
+
+🎨 Passionate about bridging art history and data, with a strong focus on visual cognition, categorization, and analytical consistency.  
